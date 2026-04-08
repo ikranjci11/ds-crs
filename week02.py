@@ -8,7 +8,7 @@ describe ("Ivan", 27)
 
 def is_adult(age):
     if age >= 18:
-        print ("True")
+        return True
     else:
-        print ("False")
-is_adult(27)
+        return False
+print(is_adult(27))
