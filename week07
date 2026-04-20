@@ -1,0 +1,28 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv("survey.csv")
+df_clean_age = df.query("Age >= 18 and Age <= 75")
+
+
+age_histplot = sns.histplot(x="Age", data= df_clean_age)
+age_histplot.set_title("Age distribution of respondents")
+plt.savefig("plot1_age_hist.png")
+
+
+treatment_countplot = sns.countplot(x="treatment", data=df_clean_age)
+treatment_countplot.set_title("Treatment-seeking behaviour")
+plt.savefig("plot2_treatment.png")
+
+
+treatment_selfemployment_countplot = sns.countplot(x="treatment", hue="self_employed", data=df_clean_age)
+treatment_selfemployment_countplot.set_title("Treatment-seeking by employment status")
+plt.savefig("plot3_treatment_employment.png")
+
+
+age_treatment_boxplot = sns.boxplot(x="Age", y="treatment", data=df_clean_age)
+age_treatment_boxplot.set_title("Age distribution by treatment-seeking")
+plt.savefig("plot4_age_boxplot.png")
+
+plt.clf()
