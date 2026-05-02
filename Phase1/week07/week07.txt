@@ -1,0 +1,11 @@
+1. Look at plot 4 — the boxplot of age by treatment. What does it tell you, if anything, about the relationship between age and treatment-seeking Interpret it as you would in a research context.
+
+I would say that treatment-seeking and non-treatment-seeking groups don't seem to differ in age. Median for both groups is about 30 years old, with TS group being slightly higher. The IQR are a bit different, with the 75th percentile of the NTS group being slightly higher at about 37, while TS group is at 35. As expected, both groups have outliers at higher age values.
+
+2. What is the difference between a histogram and a countplot? When would you use one over the other?
+
+A histogram is used to show the frequencies of continuous, quantitative variables. Count plot is used to show the frequencies of discrete, categorical variables. Histogram will help us understand the distribution of the data for the certain variable, which is an information we do not need for categorical variables.
+
+3. You used plt.savefig() instead of plt.show() to output your plots. In a real work context — presenting findings to a team or writing a report — why is saving to file generally better practice than just displaying on screen?
+
+Saving a file allows us to interact with the image outside of the python code. A saved file can be shared with the others, used in presentations or even printed out. It would be inconvenient to have to run a code just to show a picture.

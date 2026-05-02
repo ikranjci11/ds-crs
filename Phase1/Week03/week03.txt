@@ -1,0 +1,13 @@
+1. A Python list and an R vector both store sequences of values. Based on what you have learned so far, what is one way they behave similarly and one way they behave differently?
+
+Both vectors and lists are ways of storing sequences of values. One similarity is that both python and R require you give a 'name' to the lists/vectors (python: list_name = []; R: list_name <- c()). I think the difference is that R vectors can only store values of the same kind, while in python, lists can contain both strings and integers for example.
+
+2. In get_max(), you found the highest value using a for loop instead of max(). What was the logic you used? Describe it in plain English, not code.
+
+The logic was to create new variable, whose value was set to the value of the first element of the list. Then, using a for loop and if statement, every value from the list was compared to the that new variable. If the compared number was bigger, the variable was updated and set to be equal to that number. If not, it remained the same. After all the comparisons, the variable was left to be equal to the biggest number in the list.
+
+I struggled with this task because I've never seen that you could create a completely new variable inside a function which you can work with. I had the right idea for both the get_max and count_severe functions. Implementing the new variables was the missing link!
+
+3. In a real clinical dataset you would have hundreds of scores, not 8. Would the functions you wrote this week still work on a list of 500 scores without any changes? Why?
+
+I don't know a straightforward answer to this but I have a hunch. For loops manually goes through every element of the function and does the task. This probably works well when we don't have a lot of scores, but might be inefficient when working with a lot of data. I think these functions would still work, but that there is a better way of doing it. Though I would like exact explanation so I understand it fully.

@@ -1,0 +1,12 @@
+1. What is a dictionary in Python and how is it different from a list? Use a concrete example from this week's exercise to explain.
+
+Unlike lists, dictionaries contain two elements; a key and a value. A value is conected to a specific key, they come in pairs. That means we can call a value tied for a specific key. In this excercise, it allowed us to connect informations about our patients (values) to the types of information it represented (keys). In other words, keys were like headers of a data spreadsheet, while values were the data.
+
+2. Why did the CSV values come in as strings, and why does that matter when doing calculations? What would have happened if you forgot to convert the score with int()?
+
+I don't know why they come in as strings, I presume thats how csv module works under the hood. However, that absolutely does matter as we can not do calculations with string, only with integers. If I forgot to convert the score I would probably get an error message. I know you can get "int object is not subscriptable" error so I guess there is one that works the other way around.
+
+3. This week your data lived in an external file instead of being typed into the script. Why is that a better practice for real data work?
+
+Well, real data will almost never be typed into python. We almost always work with external data such as .csv and .txt files. It is more easily sharable with other people and usually easier to handle or edit. And not everyone is fluent in python like me (sarcasm) to use it in such format.
+

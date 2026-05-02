@@ -1,0 +1,12 @@
+1. Describe what you saw in the Gender column from value_counts(). Why is this kind of inconsistency a problem for analysis, and how would you approach cleaning it?
+
+I saw that people used different values to give the same answer (e.g. male, MALE, M, m...). This is a problem because pandas would treat all of these answers as different, when in reality they have the same meanings. Also a few answered neither male nor female, with many different other answers.
+First of all, I would change all the data that shares the same meaning into one consistent value. For example, M for all males. All the answers that are neither M nor F I would code as 'Other'.
+
+2. You removed rows where Age was outside 18–75. In research terms, what is this equivalent to — and what is the risk of doing it without documenting why?
+
+In research terms, that means reducing our sample size. Not sure, what else you mean when you ask in "research terms"? If we don't document it, the risk that other users of the data would not know what exactly we did and they could not assess themsleves if that was a good idea. Or maybe they dont actually care about the age variable and they only need other information which they are now missing.
+
+3. What did the groupby result tell you about treatment-seeking behaviour between self-employed and non-self-employed respondents? Answer as you would in a research report — one or two sentences of plain interpretation.
+
+It tells me that there probably arent significant differences between treatment-seeking behaviour between slef-employed and non-self-employed participants. For both groups, there is an equal (50%) chance that a paticipant will seek treatment. Maybeee self-employed participants are a bit more likely to seek treament than not (78 vs 68) but the effect size of that difference would probably be quite small. Difference in non-self-employed is rather small considering the sample size.

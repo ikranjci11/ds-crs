@@ -1,0 +1,12 @@
+1. You did roughly the same tasks in Week 4 and Week 5 — read a CSV, find severe patients, calculate summary stats. Compare the amount of code you wrote each week. What does that tell you about why pandas exists?
+
+It tells me that pandas is a library designed to handle large datasets more efficiently. I don't need to use loops and if statements to find max values and such descriptive statistics, but I can only use simple commands which are native to the library. Almost as simple as using spss or jamovi, though not quite.
+
+2. In Week 4 you had to convert anxiety scores from strings to integers manually using int(). This week pandas did it automatically. Why do you think pandas is able to do this but the csv module could not?
+
+It seems like pandas automatically recognizes what type of content it has in a dataframe. It doesnt automatically assume everything is a string, but it reads numbers as "real" numbers.
+
+3. 3. A pandas DataFrame and an SPSS data view look very similar. Based on this week's work, name one thing pandas can do that SPSS cannot, and one thing SPSS can do that you have not yet seen pandas do.
+
+I'd say that pandas makes it easier to make changes inside my dataframe, which I can than save into another dataframe inside the script I'm working in. In SPSS I would have to copy the file and make changes in the new file, which feels slower.
+Also, since we are working in open code (does that term exist?), I assume pandas can do everything and more compared to SPSS. Only difference is that SPSS is more convenient for everyone to use as it does not require coding knowledge. You only need to now which buttons to click.

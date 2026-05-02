@@ -1,0 +1,31 @@
+What are the benefits of using pyCharm?
+
+Variable creation
+	variable_name = ("content") *different from R <-
+	Two variables can have the same names in different parts of the code
+	For numbers -> no ""
+	Boulian(?) value -  T or F -> is_male = TRUE/FALSE
+	Text -> "string"
+
+Print + variable
+	print ("text" + variable + "text")
+
+Strings
+	("Novi\nred")
+	(variable.upper/lower/isupper...) -> different options
+	(varaible.upper().isupper()) -> stacking functions
+	(len(variable)) -> lenght function
+	(variable[0]) -> strings start at value 0; returns the part of the string
+	(variable.index("part of the string")) -> retruns the value; "passing the parameter"
+	(vriable.replace("old", "new")) 
+
+Numbers
+	standard operations
+	(10 % 3) -> 10 mod 3, gives the remainder
+	(str(num_variable)) -> converts into string; WILL NOT PRINT WITHOUT
+	(pow(3, 2)) -> power of
+	(max/min(4, 6))
+	(round(3.2)) -> 3
+from math import 
+	(floor/ciel(3.2) -> always round down/up
+	(sqrt(36))

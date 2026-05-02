@@ -1,0 +1,46 @@
+DICTIONARY
+
+monthConversions = {
+	"Jan": "January",
+	"Feb": "Ferbuary",
+	"Mar": "March"
+	
+
+	Key: Value
+}
+
+-all the keys must be unique
+- basics of dictionary -> key+value pairs
+
+print(monthConverstions["Mar"]) -> March
+print(monthConverstions.get("Luv", "Not a valid key")) -> returns 'None' if key invalid or str behind the comma	
+
+https://www.w3schools.com/python/gloss_python_loop_dictionary_items.asp
+
+WHILE LOOP
+
+i = 1
+while i <= 10:
+	print(i)
+	i = i + 1 ------- i += 1
+
+- it will print 1-10
+
+READING FILES
+
+open("nameofthefile.txt", "r") - read mode; "w" write mode, can change file; "a" append mode, you can add new info but not change old; "r+" reading+writting
+
+variable = open("nameofthefile.txt", "r")
+
+vaariable.close() -> closes the file
+
+print(variable.readable()) -> T or F if we can read it
+
+print(variable.readline()) -> reads the first line
+print(variable.readline()) -> reads the second line
+
+print(variable.readlines()) -> puts the lines in an array
+print(variable.readlines()[1]) -> specific line
+
+for line in variable.readlines():
+	print lines               -> prints lines od the file through a loop

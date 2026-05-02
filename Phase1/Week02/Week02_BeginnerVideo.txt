@@ -1,0 +1,97 @@
+FUNCTIONS
+
+- collection od code which preforms a specific task
+'def' -> to define/creat a function
+- name functions in all lower case!
+
+def name_of_function():
+	print ("Hello user") #creatng the function
+
+name_of_function()  #calling the function
+
+- parameter - peice of info we give to a function
+
+def name_of_function(name, age):
+	print ("Hello " + name + ", you are " + age)
+
+name_of_function("Ivan", "27")
+
+def name_of_function(name, age):
+	print ("Hello " + name + ", you are " + str(age))
+
+name_of_function("Ivan", 27)
+
+- when you have a group of code dsigned to do one thing, its good to put it ina function
+
+RETURN STATEMENTS
+
+def cube(num):
+	num*num*num #cubes a number
+
+cube(3)/print(cube(3)) -> nothing will happen
+
+def cube(num):
+	return num*num*num
+
+print(cube(3))
+
+- after 'return' keyword, no other code in the function will happen
+
+
+IF STATEMENTS
+
+is_male = TRUE/FALSE
+
+if is_male:
+	print("You are a male")
+else:
+	print("You are not a male")
+
+
+
+is_male = TRUE/FALSE
+is_tall = TRUE/FALSE
+
+if is_male or is_tall:
+	print("You are a male or tall or both")
+else:
+	print("You are neither male nor tall")
+
+
+is_male = TRUE/FALSE
+is_tall = TRUE/FALSE
+
+if is_male and is_tall:
+	print("You are a tall male")
+else:
+	print("You are either not male or not tall or both")
+
+
+
+is_male = TRUE/FALSE
+is_tall = TRUE/FALSE
+
+if is_male and is_tall:
+	print("You are a tall male")
+elif is_male and NOT(is_tall):
+	print ("You are a short male")
+elif NOT(is_male) and is_tall:
+	print ("You are not a male, but are tall")
+else:
+	print("You are not male and not tall")
+
+
+
+COMAPRISONS
+
+def max_num(num1, num2, num3):
+	if num1 >= num2 and num1 >= num3:
+		return num1
+	elif num2 >= num1 and num2 >= num3:
+		return num2
+	else:
+		return num3
+
+print(max_num(3, 4, 5))
+
+

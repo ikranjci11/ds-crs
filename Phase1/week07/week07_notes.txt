@@ -1,0 +1,73 @@
+INTRO TO SEABORN
+
+seaborn zapravo updatea matplotlib paket	
+
+sns.set()
+plt.plot(x,y) -> neki dataframe s dvije varijable
+
+sns.set_style("white") -> style of background	
+
+SAEBORN WITH PANDAS
+
+neki postojeći data = cars
+
+sns.replot(x="model_year", y="mpg", col="origin, hue="cylinders", data=cars) -> različiti x i y grafovi za zemlju porijekla,  a broj cilindara kodiran bojom točkice, basically scatterplot
+
+HISTOGRAMS
+
+general knowledge  -> data.dropna(inplace=TRUE)
+
+sns.histplot(data.columnname)
+sns.histplot(x/y="columnname", data=data, bins = 20 #number of bars or [x, y, z] as starting points of bars, binwidth = 10, binrange = (30, 60)#širina i početak/kraj bars)
+
+sns.histplot(x="columnname", data=data, stat=density/probability)
+sns.histplot(X="CN", stat=probability, cumulative=TRUE) -> how to probability increases with the development of x
+
+element = step/poly -> changes the style of bars into lines
+
+sns.histplot(X="CN, data=data, hue="CN2", multiple="layer/stack") -> adding another variable on to the plot HUE
+
+sns.histplot(X="CN, data=data, hue="CN2", multiple="dodge", shrink=0.8) -> best version of the histplot for 2 variables
+
+BIVARIATE HISTPLOT
+
+sns.histplot(x="", y="", data=data, cbar=True
+
+
+COUNTPLOTS
+
+- histogram for categorical data
+
+sns.countplot(x="CN", data=data) - y="CN" for horizontal bars
+
+- same as .countvalues in PANDAS
+
+sns.countplot(x="CN", data=data, order=data.CN.value_counts().index) -> to order descending, [::-1] after index for ascending
+
+sns.countplot(x="CN", data=data, hue="CN2", hue_order=["var1", "var2"...]) -> adding extra variable on the chat
+
+sns.countplot(x="CN", data=data, color=""/palette="") -> different colour
+
+
+BOXPLOT
+
+- median and IQR plot
+- whiskers show to the last value within 1.5*IQR range, outside are outliers
+- "categorical distribution plot"
+
+sns.boxplot(data.CN)
+
+sns.boxplot(x="data.CN", y="data.CN2") -> additional VAR
+
+sns.boxplot(x="data.CN", y="data.CN2", hue="data.CN3") -> 3rd VAR
+
+- switch x and y if you want horizontal
+
+sns.boxplot(x="data.CN", y="data.CN2", order=["var1", "var2"...], hue_order=["",""...]) -> ordering the categorical VAR
+
+sns.boxplot(x="data.CN", y="data.CN2", whis=1 to shorten, 2 to lengthen) -> changes the outliers criteria
+
+
+
+
+

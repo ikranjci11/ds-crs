@@ -1,0 +1,33 @@
+My key variables are descriptive statistics of my sample: age, gender and income status, as well as a measure of adjustment disorder symptoms.
+Gender and age need to be changed to contain understandable values instead of numbers.
+A measure of the AjD symptoms needs to be calculated out of individual items.
+Missing values need to be dropped.
+
+
+1. What analysis question did you choose and why? What do your results suggest — write 3–4 sentences as if summarising findings for a non-technical reader.
+
+My research question:
+How did the adjustment disorder symptoms during Covid-19 pandemic relate to socio-demographic variables such as gender and income?
+Previous research on of gender imbalance in AjD symptoms was inconclusive, while lower socio-economic status is usually predictive of poorer mental health outcomes.
+
+My findings suggest that female gender and extremely low income seem to be predictive of more severe adjustment disorder symptoms. Roughly 25% of female participants and 30% participants with monthly household income lower than 400€ reported severe AjD symptoms. For male participants and other income groups, that percentage was about or less than 20%, except for the people with household income more than 600, but less than 1400 euros. 
+When inspecting the boxplot of Household Income and results on the measure of Adjustment Disorder symptoms, it is visible that the two above mentioned groups reported the highest severity of AjD symptoms. However, it is possible that the results for the "more than 600, but less than 1400 euros" income group were swayed by existence of outlier results, which are not present in the lowest income group.
+
+
+2. What cleaning decisions did you make and what was your reasoning for each? What would have happened to your analysis if you had skipped the cleaning step?
+
+First, I dropped all the participants with missing values. Their number was relatively low compared to the whole sample so I believed there was no need for different treatment of the missing values (e.g. multiple imputations). Also, I still do not know how to do such sophisticated interventions in python.
+Then I renamed the columns to make them more understandable for other potential users.
+I also changed the datatypes of Gender and Income into strings and recoded them from their numerical values into labels with clear meaning. Had I left them as they were, they wouldn't have been understandable to users without the meta-data in my .sav file. 
+Finally, I calculated new variables "Adjustment Disorder" and "Severe AjD" which allowed for meaningful statistical analysis of my data, which would not have been possible with the data that only contained items of the ADNM-8 scale.
+And I checked for any inconsistent or invalid values, which I did not find any.
+
+3. Looking back at weeks 1 through 8 — what is the single biggest conceptual shift in how you think about working with data, compared to how you worked in SPSS or Jamovi?
+
+I'm not sure how to answer that. I still feel like evreything I'v just done, could've been acomplished in SPSS/Jamovi in 1/4 of the time it took me in python. I view this as learning a new skill that will later on allow me to tackle problems which these programs don't have access to.
+I also appreciate the flexibility I have in working with data in this way. However, I definitely still haven't mastered it enough to say I had any sort of "conceptual shift" in my thinking.
+
+
+My ratings for python, pandas and seaborn is between 2 and 3. I understand the basics, but I still need to search for solutions of almost all of my problems. I do not feel efficient or confident to work out things on my own, but I feel like I've learned how to seek help. I understand why certain solutions were helpful and where I made a mistake. Before, I did not feel confident that I could work through any issue I encounter while coding. Now I feel more confident I will eventually get the hang of it.
+
+My ratings for data cleaning decisions and result interpretation is between 4 and 5. This is my well polished skill from my psychology and statistics background. It's not 5 because I know it can still be improved.

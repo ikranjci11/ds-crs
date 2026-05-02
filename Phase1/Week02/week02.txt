@@ -1,0 +1,19 @@
+1. What is the difference between a function that prints a result and a function that returns a result? Why does it matter?
+
+A function that prints a result will only print the content we input in the print statement. The return function enables us to return information from a function. For example if we wanted to do a function which would perform a mathematical operation:
+
+def square(num):
+	return num*num
+print(square(num))
+
+This would allow us to get different output depending on the number we pass into the function.
+However, I'm not sure if my task for is_adult function could have been done with a return statement or if the print statement I used was the most appropriate result.
+
+2. In your is_adult() function, what would happen if someone passed a string like "twenty" instead of a number? What does this tell you about Python?
+
+The function would not work because we would be comparing integer and string variables, which doesn't make sense. It tells me that I can only input numbers as integers if I want to perform mathematical operations. And more generally, that Python distinguishes different kinds of variables.
+
+3.  You uploaded files to GitHub manually this week. In your own words, what do you think the purpose of GitHub is — beyond just storing files?
+
+My understanding of GitHub is still limited, I do admit. My best guess would be it allows more convenient sharing of projects among peers. It can also sort of serve as a portfolio of my personal work which can be easily showcased.
+

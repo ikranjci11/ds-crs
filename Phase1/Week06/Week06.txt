@@ -1,0 +1,33 @@
+WORKIN WITH MISSING VALUES IN PANDAS
+
+
+
+DROPING
+
+In [83]: df = pd.DataFrame([[np.nan, 1, 2], [1, 2, np.nan], [1, 2, 3]])
+
+In [84]: df
+Out[84]: 
+     0  1    2
+0  NaN  1  2.0
+1  1.0  2  NaN
+2  1.0  2  3.0
+
+In [85]: df.dropna()
+Out[85]: 
+     0  1    2
+2  1.0  2  3.0
+
+In [86]: df.dropna(axis=1)
+Out[86]: 
+   1
+0  1
+1  2
+2  2
+
+In [87]: ser = pd.Series([1, pd.NA], dtype="int64[pyarrow]")
+
+In [88]: ser.dropna()
+Out[88]: 
+0    1
+dtype: int64[pyarrow]
