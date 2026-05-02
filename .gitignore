@@ -1,0 +1,20 @@
+# Virtual environments
+ds_env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (we keep public datasets but exclude private ones)
+*.sav
+ipsos-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Video and large binary files
+*.mp4
+*.mov
+*.avi

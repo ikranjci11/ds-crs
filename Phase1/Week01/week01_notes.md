@@ -1,0 +1,8 @@
+ 1. What is a virtual environment and why did we create one before writing any code?
+ I'm still not sure what virtual environments are. I understand it is a good professional habit to do and I can guess that it ensures that different projects are kept separate from one another or that it stops my code from influecing anything outside of the VE? Also, we created the VE in a terminal and then opened a new .py file, which printed the results in a different terminal, not the VE one, which also confused me.
+ 2. What is the difference between a variable and a function in Python? Use your own code as an example. 
+ Varible is a "place" in which I store a piece of information (string or integer), while a function is like a piece of code that does the task I ask it to do. In my case my_name and my_age are variables, while greet() and describe() are functions.
+ 3. What felt familiar from your experience with R, and what felt meaningfully different?
+ I think its still to early to tell. I never defined functions in R, only called them and input the info they needed to run properly. Also the logic of creating variables is the same but the syntax is slightly different.
+
+ P.S. Extra reflection, the video did not cover definig functions using 'def', which I neededto create greet() and describe(). i had to google how to do that. Everything else was covered in the video and I could manage it on my own.
