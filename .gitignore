@@ -9,6 +9,7 @@ __pycache__/
 # Data files (we keep public datasets but exclude private ones)
 *.sav
 ipsos-*
+*.db
 
 # OS files
 .DS_Store

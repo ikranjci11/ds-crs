@@ -1,0 +1,20 @@
+1. Compare a SQL SELECT query to a pandas filter operation. Pick one of your queries this week and write the equivalent pandas code in plain text (no need to run it). Where do they feel similar, and where different?
+
+The SELECT query feels so much simpler. It feels like I just have to tell SQL what I want and it does it for me. In pandas, I feel like I have to actually do it by myself. I'm honestly not even sure how to do these things in pandas suddenly. I'll give it a try.
+
+SELECT *
+FROM Customer
+Where Country = 'Germany';
+
+Pandas:
+
+df_germany = df["Country].value_counts().loc["Germany"]
+display(df_germany)
+
+2. The Chinook database has 11 tables instead of one big spreadsheet. What might be the advantage of splitting data across multiple tables instead of cramming everything into one large table?
+
+First of all - clarity. This is so much more readable and easier to use than one huge table of 50+ columns. And still, since SQL is used to handle relational databases, I believe the data is still connected across those tables.
+
+3. SQL uses single quotes around text values like 'Germany' but no quotes around column names or table names. Why do you think it makes that distinction? What problem could occur if it didn't?
+
+Because it would be possible that some values share the same name as one of the columns. If there was no such distinctions, maybe SQL would not be able to differentiate them. I suppose there are statements in which both columns and specific values can be used, which would create confusion.
